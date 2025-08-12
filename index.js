@@ -33,4 +33,4 @@ app.get('/healthz', (_req, res) => {
 });
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`🚀 Llamalyze API listening on http://localhost:${port}`));
+app.listen(port, () => console.log(`🚀 Llamalyze API listening on http://localhost:${port}/api/boards`));
