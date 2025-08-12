@@ -24,5 +24,13 @@ app.get('/api/boards', (req, res) => {
     })
 })
 
+app.get('/', (_req, res) => {
+    res.type('text').send('Llamalyze API 🦙 up. Try /api/boards  |  /healthz');
+});
+
+app.get('/healthz', (_req, res) => {
+    res.json({ ok: true });
+});
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`🚀 Llamalyze API listening on http://localhost:${port}`));
