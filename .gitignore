@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Logs & diagnostics
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# Runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Env/config
+.env
+.env.*
+!.env.example
+
+# SQLite databases (keep the folder, ignore DB files)
+data/*.db
+data/*.db-*
+data/*.sqlite
+data/*.sqlite3
+
+# Coverage / build artifacts
+coverage/
+dist/
+build/
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Optional: if you’re using npm, you usually WANT package-lock.json tracked.
+# If you use npm only, you can ignore other managers’ lockfiles:
+# yarn.lock
+# pnpm-lock.yaml
+
